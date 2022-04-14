@@ -1,0 +1,18 @@
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  cursor: pointer;
+  padding: 20px;
+
+  &:hover {
+    background-color: lightgray;
+    border-radius: 40px;
+  }
+
+  img {
+    width: 30px;
+    margin-right: 20px;
+  }
+}
