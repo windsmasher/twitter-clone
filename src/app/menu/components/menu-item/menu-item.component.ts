@@ -14,5 +14,6 @@ export class MenuItemComponent implements OnInit {
   @Input() menuItem: MenuItem = {
     title: '',
     image: '',
+    link: '',
   };
 }
