@@ -1,2 +1,2 @@
-<app-post-add></app-post-add>
-<app-post-list></app-post-list>
+<app-post-add (newPostEvent)="newPostEventHandler($event)"></app-post-add>
+<app-post-list [postList]="postList"></app-post-list>
