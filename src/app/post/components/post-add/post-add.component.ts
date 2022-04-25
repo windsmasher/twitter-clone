@@ -13,13 +13,13 @@ export class PostAddComponent implements OnInit {
   ngOnInit(): void {}
 
   postContent = new FormControl('');
+  profileImgSrc = '../../../../assets/profile.png';
   @Output() newPostEvent: EventEmitter<any> = new EventEmitter();
 
   onPostInput = () => {};
 
   addPost = () => {
-    console.log(this.postContent.value);
-    const post: Post = { content: this.postContent.value, author: 'TP' };
+    const post: Post = { content: this.postContent.value, author: 'Tomasz' };
     this.newPostEvent.emit(post);
   };
 }

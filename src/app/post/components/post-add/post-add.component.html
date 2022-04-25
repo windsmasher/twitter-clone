@@ -1,2 +1,23 @@
-<input id="postContent" type="text" [formControl]="postContent" (input)="onPostInput()">
-<app-menu-tweet-btn [fontSize]="10" [padding]="10" [width]="40" (click)="addPost()"></app-menu-tweet-btn>
+<div class="top-input-panel">
+  <img src="{{profileImgSrc}}" alt="">
+  <input
+  class="add-input"
+  id="postContent"
+  type="text"
+  placeholder="What's happening?"
+  [formControl]="postContent"
+  (input)="onPostInput()"
+/>
+</div>
+
+<div class="bottom-input-panel">
+  <div class="icons"></div>
+  <div class="buttons">
+    <app-menu-tweet-btn
+      [fontSize]="10"
+      [padding]="10"
+      [width]="40"
+      (click)="addPost()"
+    ></app-menu-tweet-btn>
+  </div>
+</div>
